@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scanitive - Sağlıklı Yaşam Asistanı</title>
+    <title>Scanitive - Healthy Living Assistant</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -60,25 +60,6 @@
             background-color: #333;
         }
 
-        .screenshots {
-            margin-top: 60px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .screenshot-placeholder {
-            width: 200px;
-            height: 400px;
-            background-color: #e5e5ea;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #86868b;
-        }
-
         footer {
             margin-top: 60px;
             padding: 20px;
@@ -98,6 +79,60 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        const translations = {
+            en: {
+                title: "Scanitive - Healthy Living Assistant",
+                subtitle: "Know What You Eat, Protect Your Health.",
+                description: "Instantly scan product labels while shopping, analyze ingredients, and make healthy choices. Food additives, allergens, and nutritional values are now in your pocket.",
+                download: " Download on the App Store",
+                privacy: "Privacy Policy",
+                contact: "Contact & Support",
+                rights: "© 2026 Erman Bagbakan. All Rights Reserved."
+            },
+            tr: {
+                title: "Scanitive - Sağlıklı Yaşam Asistanı",
+                subtitle: "Yediklerinizi Tanıyın, Sağlığınızı Koruyun.",
+                description: "Market alışverişlerinizde ürün etiketlerini anında tarayın, içindekileri analiz edin ve sağlıklı tercihler yapın. Gıda katkı maddeleri, alerjenler ve besin değerleri artık cebinizde.",
+                download: " App Store'dan İndir",
+                privacy: "Gizlilik Politikası",
+                contact: "İletişim & Destek",
+                rights: "© 2026 Erman Bagbakan. Tüm Hakları Saklıdır."
+            },
+            de: {
+                title: "Scanitive - Assistent für gesundes Leben",
+                subtitle: "Wissen, was du isst. Schütze deine Gesundheit.",
+                description: "Scanne beim Einkaufen sofort Produktetiketten, analysiere Inhaltsstoffe und triff gesunde Entscheidungen. Lebensmittelzusatzstoffe, Allergene und Nährwerte jetzt in deiner Tasche.",
+                download: " Laden im App Store",
+                privacy: "Datenschutzerklärung",
+                contact: "Kontakt & Support",
+                rights: "© 2026 Erman Bagbakan. Alle Rechte vorbehalten."
+            }
+        };
+
+        function setLanguage(lang) {
+            const t = translations[lang];
+            document.title = t.title;
+            document.getElementById('subtitle').innerText = t.subtitle;
+            document.getElementById('description').innerText = t.description;
+            document.getElementById('downloadButton').innerText = t.download;
+            document.getElementById('privacyLink').innerText = t.privacy;
+            document.getElementById('contactLink').innerText = t.contact;
+            document.getElementById('rights').innerText = t.rights;
+            document.documentElement.lang = lang;
+        }
+
+        window.onload = function () {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('tr')) {
+                setLanguage('tr');
+            } else if (userLang.startsWith('de')) {
+                setLanguage('de');
+            } else {
+                setLanguage('en');
+            }
+        };
+    </script>
 </head>
 
 <body>
@@ -105,14 +140,15 @@
         <img src="logo.png" alt="Scanitive Logo" class="logo"
             style="width: 120px; height: 120px; border-radius: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
         <h1>Scanitive</h1>
-        <p class="subtitle">Yediklerinizi Tanıyın, Sağlığınızı Koruyun.</p>
+        <p id="subtitle" class="subtitle">Know What You Eat, Protect Your Health.</p>
 
-        <p>Market alışverişlerinizde ürün etiketlerini anında tarayın, içindekileri analiz edin ve sağlıklı tercihler
-            yapın. Gıda katkı maddeleri, alerjenler ve besin değerleri artık cebinizde.</p>
+        <p id="description">Instantly scan product labels while shopping, analyze ingredients, and make healthy choices.
+            Food additives, allergens, and nutritional values are now in your pocket.</p>
 
         <br><br>
 
-        <a href="https://apps.apple.com/app/id6757938585" class="app-store-button"> App Store'dan İndir</a>
+        <a id="downloadButton" href="https://apps.apple.com/app/id6757938585" class="app-store-button"> Download on the
+            App Store</a>
 
         <!-- App Ads Verification -->
         <div style="margin-top: 50px; font-size: 12px; color: #ccc;">
@@ -121,10 +157,11 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Erman Bagbakan. Tüm Hakları Saklıdır.</p>
+        <p id="rights">&copy; 2026 Erman Bagbakan. All Rights Reserved.</p>
         <br>
-        <a href="https://docs.google.com/document/d/1MDMqe4UGyqFQ2nlWaa8o2PdPre41BWp0knx2T">Gizlilik Politikası</a> |
-        <a href="mailto:ebagbakan@icloud.com">İletişim & Destek</a>
+        <a id="privacyLink" href="https://docs.google.com/document/d/1MDMqe4UGyqFQ2nlWaa8o2PdPre41BWp0knx2T">Privacy
+            Policy</a> |
+        <a id="contactLink" href="mailto:ebagbakan@icloud.com">Contact & Support</a>
     </footer>
 </body>
 
