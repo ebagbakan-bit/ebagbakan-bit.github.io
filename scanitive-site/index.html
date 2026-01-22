@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanitive - Healthy Living Assistant</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        p.subtitle {
+            font-size: 24px;
+            color: #86868b;
+            margin-bottom: 40px;
+        }
+
+        .app-store-button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.2s;
+        }
+
+        .app-store-button:hover {
+            transform: scale(1.05);
+            background-color: #333;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            border-top: 1px solid #d2d2d7;
+            text-align: center;
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        footer a {
+            color: #0066cc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        const translations = {
+            en: {
+                title: "Scanitive - Healthy Living Assistant",
+                subtitle: "Know What You Eat, Protect Your Health.",
+                description: "Instantly scan product labels while shopping, analyze ingredients, and make healthy choices. Food additives, allergens, and nutritional values are now in your pocket.",
+                download: " Download on the App Store",
+                privacy: "Privacy Policy",
+                contact: "Contact & Support",
+                rights: "© 2026 Erman Bagbakan. All Rights Reserved."
+            },
+            tr: {
+                title: "Scanitive - Sağlıklı Yaşam Asistanı",
+                subtitle: "Yediklerinizi Tanıyın, Sağlığınızı Koruyun.",
+                description: "Market alışverişlerinizde ürün etiketlerini anında tarayın, içindekileri analiz edin ve sağlıklı tercihler yapın. Gıda katkı maddeleri, alerjenler ve besin değerleri artık cebinizde.",
+                download: " App Store'dan İndir",
+                privacy: "Gizlilik Politikası",
+                contact: "İletişim & Destek",
+                rights: "© 2026 Erman Bagbakan. Tüm Hakları Saklıdır."
+            },
+            de: {
+                title: "Scanitive - Assistent für gesundes Leben",
+                subtitle: "Wissen, was du isst. Schütze deine Gesundheit.",
+                description: "Scanne beim Einkaufen sofort Produktetiketten, analysiere Inhaltsstoffe und triff gesunde Entscheidungen. Lebensmittelzusatzstoffe, Allergene und Nährwerte jetzt in deiner Tasche.",
+                download: " Laden im App Store",
+                privacy: "Datenschutzerklärung",
+                contact: "Kontakt & Support",
+                rights: "© 2026 Erman Bagbakan. Alle Rechte vorbehalten."
+            }
+        };
+
+        function setLanguage(lang) {
+            const t = translations[lang];
+            document.title = t.title;
+            document.getElementById('subtitle').innerText = t.subtitle;
+            document.getElementById('description').innerText = t.description;
+            document.getElementById('downloadButton').innerText = t.download;
+            document.getElementById('privacyLink').innerText = t.privacy;
+            document.getElementById('contactLink').innerText = t.contact;
+            document.getElementById('rights').innerText = t.rights;
+            document.documentElement.lang = lang;
+        }
+
+        window.onload = function () {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('tr')) {
+                setLanguage('tr');
+            } else if (userLang.startsWith('de')) {
+                setLanguage('de');
+            } else {
+                setLanguage('en');
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Scanitive Logo" class="logo"
+            style="width: 120px; height: 120px; border-radius: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h1>Scanitive</h1>
+        <p id="subtitle" class="subtitle">Know What You Eat, Protect Your Health.</p>
+
+        <p id="description">Instantly scan product labels while shopping, analyze ingredients, and make healthy choices.
+            Food additives, allergens, and nutritional values are now in your pocket.</p>
+
+        <br><br>
+
+        <a id="downloadButton" href="https://apps.apple.com/app/id6757938585" class="app-store-button"> Download on the
+            App Store</a>
+
+        <!-- App Ads Verification -->
+        <div style="margin-top: 50px; font-size: 12px; color: #ccc;">
+            <p>Verification File: <a href="app-ads.txt" style="color: #999;">app-ads.txt</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p id="rights">&copy; 2026 Erman Bagbakan. All Rights Reserved.</p>
+        <br>
+        <a id="privacyLink" href="https://docs.google.com/document/d/1MDMqe4UGyqFQ2nlWaa8o2PdPre41BWp0knx2T">Privacy
+            Policy</a> |
+        <a id="contactLink" href="mailto:ebagbakan@icloud.com">Contact & Support</a>
+    </footer>
+</body>
+
+</html>
