@@ -844,6 +844,8 @@ bidease.com,bidease_seller_36,RESELLER
 
 bidease.com,bidease_seller_8,RESELLER
 
+bidease.com, bidease_seller_26, RESELLER
+
 bidence.com, 3de04db04d6eb28b13281a39b1c16d67, RESELLER
 
 bidence.com, 4a87393d59a18d4bbfb5326c5d98051a, RESELLER
@@ -5085,3 +5087,4 @@ trustedstack.com, TS677PGY3, RESELLER
 adyoulike.com, 721f20f70910d379981dc19ec5da709f, RESELLER
 
 axonix.com, 59204, RESELLER
+
