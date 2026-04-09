@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scanitive - Healthy Living Assistant</title>
+    <title>Scanitive - Ingredient Scanner</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -82,31 +82,76 @@
     <script>
         const translations = {
             en: {
-                title: "Scanitive - Healthy Living Assistant",
-                subtitle: "Know What You Eat, Protect Your Health.",
-                description: "Instantly scan product labels while shopping, analyze ingredients, and make healthy choices. Food additives, allergens, and nutritional values are now in your pocket.",
-                download: " Download on the App Store",
+                title: "Scanitive - Ingredient Scanner",
+                subtitle: "Know What You Eat and What You Apply.",
+                description: "Instantly scan food and cosmetic labels while shopping, analyze ingredients, and make safer choices. 200+ food additives and 3000+ INCI cosmetic ingredients \u2014 all in your pocket.",
+                download: " Download on the App Store",
                 privacy: "Privacy Policy",
                 contact: "Contact & Support",
-                rights: "© 2026 Erman Bagbakan. All Rights Reserved."
+                rights: "\u00a9 2026 Erman Bagbakan. All Rights Reserved."
             },
             tr: {
-                title: "Scanitive - Sağlıklı Yaşam Asistanı",
-                subtitle: "Yediklerinizi Tanıyın, Sağlığınızı Koruyun.",
-                description: "Market alışverişlerinizde ürün etiketlerini anında tarayın, içindekileri analiz edin ve sağlıklı tercihler yapın. Gıda katkı maddeleri, alerjenler ve besin değerleri artık cebinizde.",
-                download: " App Store'dan İndir",
-                privacy: "Gizlilik Politikası",
-                contact: "İletişim & Destek",
-                rights: "© 2026 Erman Bagbakan. Tüm Hakları Saklıdır."
+                title: "Scanitive - \u0130\u00e7erik Taray\u0131c\u0131",
+                subtitle: "Yediklerinizi ve Cildinize S\u00fcrd\u00fcklerinizi Tan\u0131y\u0131n.",
+                description: "Al\u0131\u015fveri\u015fte g\u0131da ve kozmetik etiketlerini an\u0131nda taray\u0131n, i\u00e7erikleri analiz edin ve daha g\u00fcvenli tercihler yap\u0131n. 200+ g\u0131da katk\u0131 maddesi ve 3000+ INCI kozmetik i\u00e7erik \u2014 hepsi cebinizde.",
+                download: " App Store'dan \u0130ndir",
+                privacy: "Gizlilik Politikas\u0131",
+                contact: "\u0130leti\u015fim & Destek",
+                rights: "\u00a9 2026 Erman Bagbakan. T\u00fcm Haklar\u0131 Sakl\u0131d\u0131r."
             },
             de: {
-                title: "Scanitive - Assistent für gesundes Leben",
-                subtitle: "Wissen, was du isst. Schütze deine Gesundheit.",
-                description: "Scanne beim Einkaufen sofort Produktetiketten, analysiere Inhaltsstoffe und triff gesunde Entscheidungen. Lebensmittelzusatzstoffe, Allergene und Nährwerte jetzt in deiner Tasche.",
-                download: " Laden im App Store",
-                privacy: "Datenschutzerklärung",
+                title: "Scanitive - Zutatenscanner",
+                subtitle: "Wisse, was du isst und was du auftr\u00e4gst.",
+                description: "Scanne beim Einkaufen sofort Lebensmittel- und Kosmetiketiketten, analysiere Inhaltsstoffe und triff sicherere Entscheidungen. 200+ Lebensmittelzusatzstoffe und 3000+ INCI-Kosmetikinhaltsstoffe \u2014 alles in deiner Tasche.",
+                download: " Laden im App Store",
+                privacy: "Datenschutzerkl\u00e4rung",
                 contact: "Kontakt & Support",
-                rights: "© 2026 Erman Bagbakan. Alle Rechte vorbehalten."
+                rights: "\u00a9 2026 Erman Bagbakan. Alle Rechte vorbehalten."
+            },
+            fr: {
+                title: "Scanitive - Scan d'Ingr\u00e9dients",
+                subtitle: "Sachez ce que vous mangez et ce que vous appliquez.",
+                description: "Scannez instantan\u00e9ment les \u00e9tiquettes alimentaires et cosm\u00e9tiques pendant vos achats, analysez les ingr\u00e9dients et faites des choix plus s\u00fbrs. 200+ additifs alimentaires et 3000+ ingr\u00e9dients cosm\u00e9tiques INCI \u2014 tout dans votre poche.",
+                download: " T\u00e9l\u00e9charger dans l'App Store",
+                privacy: "Politique de Confidentialit\u00e9",
+                contact: "Contact & Support",
+                rights: "\u00a9 2026 Erman Bagbakan. Tous droits r\u00e9serv\u00e9s."
+            },
+            it: {
+                title: "Scanitive - Scan Ingredienti",
+                subtitle: "Scopri cosa mangi e cosa applichi sulla pelle.",
+                description: "Scansiona al volo le etichette alimentari e cosmetiche durante lo shopping, analizza gli ingredienti e fai scelte pi\u00f9 sicure. 200+ additivi alimentari e 3000+ ingredienti cosmetici INCI \u2014 tutto a portata di mano.",
+                download: " Scarica dall'App Store",
+                privacy: "Informativa sulla Privacy",
+                contact: "Contatti e Supporto",
+                rights: "\u00a9 2026 Erman Bagbakan. Tutti i diritti riservati."
+            },
+            sv: {
+                title: "Scanitive - Ingrediensskanner",
+                subtitle: "Vet vad du \u00e4ter och vad du applicerar.",
+                description: "Skanna livsmedels- och kosmetiketiketter direkt n\u00e4r du handlar, analysera ingredienser och g\u00f6r s\u00e4krare val. 200+ livsmedelstills\u00e4tser och 3000+ INCI-kosmetikingredienser \u2014 allt i din ficka.",
+                download: " H\u00e4mta i App Store",
+                privacy: "Integritetspolicy",
+                contact: "Kontakt & Support",
+                rights: "\u00a9 2026 Erman Bagbakan. Alla r\u00e4ttigheter f\u00f6rbeh\u00e5llna."
+            },
+            ru: {
+                title: "Scanitive - \u0421\u043a\u0430\u043d\u0435\u0440 \u0421\u043e\u0441\u0442\u0430\u0432\u0430",
+                subtitle: "\u0417\u043d\u0430\u0439\u0442\u0435, \u0447\u0442\u043e \u0432\u044b \u0435\u0434\u0438\u0442\u0435 \u0438 \u0447\u0442\u043e \u043d\u0430\u043d\u043e\u0441\u0438\u0442\u0435 \u043d\u0430 \u043a\u043e\u0436\u0443.",
+                description: "\u041c\u0433\u043d\u043e\u0432\u0435\u043d\u043d\u043e \u0441\u043a\u0430\u043d\u0438\u0440\u0443\u0439\u0442\u0435 \u044d\u0442\u0438\u043a\u0435\u0442\u043a\u0438 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u043e\u0432 \u0438 \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u043a\u0438 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u043f\u043e\u043a\u0443\u043f\u043e\u043a, \u0430\u043d\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u0439\u0442\u0435 \u0441\u043e\u0441\u0442\u0430\u0432 \u0438 \u0434\u0435\u043b\u0430\u0439\u0442\u0435 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u044b\u0439 \u0432\u044b\u0431\u043e\u0440. 200+ \u043f\u0438\u0449\u0435\u0432\u044b\u0445 \u0434\u043e\u0431\u0430\u0432\u043e\u043a \u0438 3000+ INCI-\u0438\u043d\u0433\u0440\u0435\u0434\u0438\u0435\u043d\u0442\u043e\u0432 \u043a\u043e\u0441\u043c\u0435\u0442\u0438\u043a\u0438 \u2014 \u0432\u0441\u0451 \u0443 \u0432\u0430\u0441 \u0432 \u043a\u0430\u0440\u043c\u0430\u043d\u0435.",
+                download: " \u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0432 App Store",
+                privacy: "\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430 \u043a\u043e\u043d\u0444\u0438\u0434\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0438",
+                contact: "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b \u0438 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0430",
+                rights: "\u00a9 2026 Erman Bagbakan. \u0412\u0441\u0435 \u043f\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043d\u044b."
+            },
+            es: {
+                title: "Scanitive - Scan Ingredientes",
+                subtitle: "Sepa lo que come y lo que aplica en su piel.",
+                description: "Escanee al instante las etiquetas alimentarias y cosm\u00e9ticas mientras compra, analice los ingredientes y tome decisiones m\u00e1s seguras. 200+ aditivos alimentarios y 3000+ ingredientes cosm\u00e9ticos INCI \u2014 todo en su bolsillo.",
+                download: " Descargar en la App Store",
+                privacy: "Pol\u00edtica de Privacidad",
+                contact: "Contacto y Soporte",
+                rights: "\u00a9 2026 Erman Bagbakan. Todos los derechos reservados."
             }
         };
 
@@ -128,6 +173,16 @@
                 setLanguage('tr');
             } else if (userLang.startsWith('de')) {
                 setLanguage('de');
+            } else if (userLang.startsWith('fr')) {
+                setLanguage('fr');
+            } else if (userLang.startsWith('it')) {
+                setLanguage('it');
+            } else if (userLang.startsWith('sv')) {
+                setLanguage('sv');
+            } else if (userLang.startsWith('ru')) {
+                setLanguage('ru');
+            } else if (userLang.startsWith('es')) {
+                setLanguage('es');
             } else {
                 setLanguage('en');
             }
@@ -140,14 +195,14 @@
         <img src="logo.png" alt="Scanitive Logo" class="logo"
             style="width: 120px; height: 120px; border-radius: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
         <h1>Scanitive</h1>
-        <p id="subtitle" class="subtitle">Know What You Eat, Protect Your Health.</p>
+        <p id="subtitle" class="subtitle">Know What You Eat and What You Apply.</p>
 
-        <p id="description">Instantly scan product labels while shopping, analyze ingredients, and make healthy choices.
-            Food additives, allergens, and nutritional values are now in your pocket.</p>
+        <p id="description">Instantly scan food and cosmetic labels while shopping, analyze ingredients, and make safer choices.
+            200+ food additives and 3000+ INCI cosmetic ingredients — all in your pocket.</p>
 
         <br><br>
 
-        <a id="downloadButton" href="https://apps.apple.com/app/id6757938585" class="app-store-button"> Download on the
+        <a id="downloadButton" href="https://apps.apple.com/app/id6757938585" class="app-store-button"> Download on the
             App Store</a>
 
         <!-- App Ads Verification -->
