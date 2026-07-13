@@ -3,89 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moonwake — Sleep Tracker & Smart Alarm for iPhone and Apple Watch</title>
-<meta name="description" content="Moonwake tracks your sleep, records snoring on-device, and wakes you at the lightest moment of your morning with a smart alarm on Apple Watch.">
-<link rel="icon" type="image/png" href="assets/icon.png">
-<link rel="apple-touch-icon" href="assets/icon.png">
-<meta property="og:title" content="Moonwake — Sleep Tracker & Smart Alarm">
-<meta property="og:description" content="Rest well. Wake better. Sleep tracking, snore insight, and a gentle smart alarm on Apple Watch.">
-<meta property="og:image" content="https://ebagbakan-bit.github.io/assets/hero-phone.png">
-<meta property="og:url" content="https://ebagbakan-bit.github.io/">
-<link rel="stylesheet" href="style.css">
+<title>Erman Bağbakan — Apps</title>
+<meta name="description" content="iOS apps by Erman Bağbakan: Moonwake, Scanitive, and Limn.">
+<style>
+:root{--bg:#0e1220;--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.12);
+  --ink:#f3f1ec;--dim:#a7abbe;--accent:#e9bf74}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+  background:linear-gradient(180deg,#0e1220 0%,#141a30 100%);color:var(--ink);
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:40px 22px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1{font-size:26px;font-weight:700;letter-spacing:.3px}
+.sub{color:var(--dim);font-size:15px;margin:4px 0 34px}
+.apps{display:flex;flex-direction:column;gap:14px;width:100%;max-width:440px}
+.app{display:flex;align-items:center;gap:16px;background:var(--card);
+  border:1px solid var(--line);border-radius:18px;padding:18px 20px;
+  text-decoration:none;color:var(--ink);transition:background .15s}
+.app:hover{background:rgba(255,255,255,.09)}
+.app .ic{font-size:28px;width:48px;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);flex:none}
+.app h2{font-size:17px;font-weight:600}
+.app p{font-size:13.5px;color:var(--dim)}
+.app .go{margin-left:auto;color:var(--accent);font-size:18px;flex:none}
+footer{margin-top:44px;color:var(--dim);font-size:12.5px;text-align:center}
+footer a{color:var(--dim)}
+</style>
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="index.html"><img class="brand-icon" src="assets/icon.png" alt=""><span class="mark">m<span class="oo">oo</span>nwake</span></a>
-    <div class="nav-right">
-      <a class="nav-link" href="privacy.html">Privacy</a>
-      <a class="nav-link" href="terms.html">Terms</a>
-      <a class="nav-link" href="mailto:ermanbagbakan.1995@gmail.com">Support</a>
-    </div>
-  </div>
-</header>
+<h1>Erman Bağbakan</h1>
+<p class="sub">Apps for iPhone and Apple Watch</p>
 
-<main class="wrap">
-  <section class="hero-split">
-    <div class="hero-copy">
-      <div class="moon" aria-hidden="true"></div>
-      <h1 class="tagline">Rest well. Wake better.</h1>
-      <p class="subtag">Moonwake tracks your night with your iPhone and Apple Watch, listens for snoring on-device, and rings at the lightest moment of your morning — so waking up feels like surfacing, not sinking.</p>
-      <span class="cta soon">Coming soon to the App Store</span>
-    </div>
-    <div class="hero-shot">
-      <img src="assets/hero-phone.png" alt="Moonwake app on iPhone showing the sleep home screen" width="644" height="1400">
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>What it does</h2>
-    <p class="lead">Everything happens on your device. No account, no cloud, no data leaving your pocket.</p>
-    <div class="grid">
-      <div class="card"><div class="ic">⏰</div><h3>Smart wake</h3><p>Your Apple Watch feels the moment you drift into light sleep near your alarm and wakes you there — gently, on the wrist.</p></div>
-      <div class="card"><div class="ic">🎙️</div><h3>Snore insight</h3><p>On-device sound analysis finds snoring and lets you hear the highlights in the morning. Recordings never leave your phone.</p></div>
-      <div class="card"><div class="ic">🌙</div><h3>Sleep stages & score</h3><p>Deep, REM and light stages with a morning score — from Apple Watch data, refined by Moonwake's own on-device model.</p></div>
-      <div class="card"><div class="ic">📈</div><h3>Trends that teach</h3><p>Sleep debt, schedule streaks, and what your late coffee actually does to your night.</p></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>A calm companion, all night</h2>
-    <p class="lead">From lights-out to morning report — quiet screens designed for tired eyes.</p>
-    <div class="shots-row">
-      <img class="shot" src="assets/shot-4.png" alt="Smart alarm setup screen" loading="lazy">
-      <img class="shot" src="assets/shot-5.png" alt="Morning sleep report with score and stages" loading="lazy">
-      <img class="shot" src="assets/shot-7.png" alt="Sleep sounds library" loading="lazy">
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>On your wrist</h2>
-    <p class="lead">Start the night from the watch, wake to a gentle tap — the phone can stay face-down.</p>
-    <div class="watch-row">
-      <img class="watch-shot" src="assets/watch-1.png" alt="Moonwake on Apple Watch — tracking screen" loading="lazy">
-      <img class="watch-shot" src="assets/watch-3.png" alt="Moonwake on Apple Watch — smart alarm" loading="lazy">
-    </div>
-  </section>
-
-  <section class="section" id="support">
-    <h2>Support</h2>
-    <p class="lead">Questions, feedback, or trouble with the app? Write to us — a human answers.</p>
-    <p style="text-align:center">
-      <a class="email-pill" href="mailto:ermanbagbakan.1995@gmail.com">✉️ ermanbagbakan.1995@gmail.com</a>
-    </p>
-  </section>
-</main>
+<nav class="apps">
+  <a class="app" href="moonwake-sleeptracker/">
+    <span class="ic">🌙</span>
+    <span><h2>Moonwake</h2><p>Sleep tracker &amp; smart alarm for iPhone and Apple Watch.</p></span>
+    <span class="go">→</span>
+  </a>
+  <a class="app" href="scanitive-site/">
+    <span class="ic">🛡️</span>
+    <span><h2>Scanitive</h2><p>Scan food &amp; cosmetic labels, know what's inside.</p></span>
+    <span class="go">→</span>
+  </a>
+  <a class="app" href="limn-game/">
+    <span class="ic">🎮</span>
+    <span><h2>Limn</h2><p>A little game of light and shadow for iOS.</p></span>
+    <span class="go">→</span>
+  </a>
+</nav>
 
 <footer>
-  <div class="wrap">
-    <div class="foot-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="mailto:ermanbagbakan.1995@gmail.com">Contact</a>
-    </div>
-    <p class="copy">© 2026 Erman Bağbakan. Moonwake is not a medical device.</p>
-  </div>
+  <p>© 2026 Erman Bağbakan · <a href="app-ads.txt">app-ads.txt</a></p>
 </footer>
 </body>
 </html>
